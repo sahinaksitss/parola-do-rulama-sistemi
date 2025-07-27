@@ -58,3 +58,24 @@ This project demonstrates how even simple logic flows can introduce key principl
 Student ID: 220205064
 Software Engineering – OSTİM Teknik Üniversitesi  
 2025
+-----------------------------------------------------------------------------------------------------------------------------
+CODE 
+import getpass
+
+DOĞRU_PAROLA = "SAHİN123"
+DENEME_HAKKI = 3
+
+while DENEME_HAKKI > 0:
+    parola = getpass.getpass("PLEASE ENTER PASSWORD ")
+
+    if parola == DOĞRU_PAROLA:
+        print("✅ Giriş Başarılı!")
+        break
+    else:
+        DENEME_HAKKI -= 1
+        print(f"❌ Hatalı parola! Kalan deneme hakkı: {DENEME_HAKKI}")
+
+if DENEME_HAKKI == 0:
+    print(" You are close :D")
+
+
